@@ -4,7 +4,23 @@
   "description": "This is a simple code for getting the percentage of dependencies of dependencies",
   "main": "App.js",
   "scripts": {
-    "test": "standard && node test.js | tap-spec"
+    "test": "standard && node test.js | tap-spec",
+    "lint": "standard . --fix"
+  },
+  "files": [
+    "App.js",
+    "cli.js"
+  ],
+  "author": {
+    "name": "Alestor Aldous",
+    "url": "https://alestor123.github.io"
+  },
+  "funding": "https://alestor123.is-a.dev/donate/",
+  "engines": {
+    "node": ">=10"
+  },
+  "bin": {
+    "composition-percentage": "cli.js"
   },
   "repository": {
     "type": "git",
@@ -22,10 +38,17 @@
     "composition",
     "percentage"
   ],
-  "author": "Alestor Aldous",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/alestor123/COMPOSITION-GRAPH/issues"
   },
-  "homepage": "https://github.com/alestor123/COMPOSITION-GRAPH#readme"
+  "homepage": "https://github.com/alestor123/COMPOSITION-GRAPH#readme",
+  "dependencies": {
+    "axios": "^0.21.1"
+  },
+  "devDependencies": {
+    "standard": "^16.0.3",
+    "tap": "^15.0.9",
+    "tap-spec": "^5.0.0"
+  }
 }
